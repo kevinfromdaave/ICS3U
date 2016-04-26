@@ -28,21 +28,21 @@ public class RollingTheDice {
 		//Calculations/Output
 		while(playAgain.equalsIgnoreCase("yes")){
 
-		userDie1 = (int)(Math.random()* 6) + 1;
-		userDie2 = (int)(Math.random()* 6) + 1;
-		totalUser = userDie1 + userDie2;
+			userDie1 = (int)(Math.random()* 6) + 1;
+			userDie2 = (int)(Math.random()* 6) + 1;
+			totalUser = userDie1 + userDie2;
 
-		System.out.println("Your number is " + totalUser);
+			System.out.println("Your number is " + totalUser);
 
-		compDie1 = (int)(Math.random()* 6) + 1;
-		compDie2 = (int)(Math.random()* 6) + 1;
-		totalComp = compDie1 + compDie2;
+			compDie1 = (int)(Math.random()* 6) + 1;
+			compDie2 = (int)(Math.random()* 6) + 1;
+			totalComp = compDie1 + compDie2;
 
-		System.out.println("My number is " + totalComp);
+			System.out.println("My number is " + totalComp);
 
-		//Decisions
+			//Decisions
 
-		
+
 			if (totalUser > totalComp){
 				System.out.println("That means you win :(");
 			}
@@ -57,8 +57,8 @@ public class RollingTheDice {
 
 			System.out.println("Play again?");
 			playAgain = scan.nextLine();
-			
-			
+
+
 		}
 	}
 }
