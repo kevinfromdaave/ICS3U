@@ -37,8 +37,10 @@ public class mississipi {
 		drawP();
 		System.out.println(" ");		
 		drawI();		
+	
 
 	}
+	
 	
 	/**
 	 * This method draws P
