@@ -10,7 +10,7 @@ import java.util.Scanner;
  * @Kevin Appiah 
  */
 
-public class FUnWithMath {
+public class FunWithMathTwo {
 	
 	 static DecimalFormat df = new DecimalFormat("0.00");
 
@@ -35,14 +35,21 @@ public class FUnWithMath {
 		try{
 		num1 = Integer.parseInt(scan.nextLine());		
 		num2 = Integer.parseInt(scan.nextLine());
-				
-		add(num1, num2);
-		subtract(num1, num2);
-		multiply(num1, num2);
-		divide(num1, num2);
+		
+		
+
+		System.out.println(num1 + " + " + num2 + " = " + add(num1, num2));
+		System.out.println(num1 + " - " + num2 + " = " + subtract(num1, num2));
+		System.out.println(num1 + " * " + num2 + " = " + multiply(num1, num2));
+		System.out.println(num1 + " / " + num2 + " = " + df.format(divide(num1, num2)));
+		
+						
 		}catch(Exception e){
 			System.out.println("Error Occured " + e.getMessage());
 		}
+		
+		
+		
 		
 	}
 	
@@ -51,19 +58,19 @@ public class FUnWithMath {
 	 * @param getnum1
 	 * @param getnum2
 	 */
-	private static void add (int getnum1, int getnum2){
+	private static double add (double getnum1, double getnum2){
 			
-		System.out.println(getnum1 + " + " + getnum2 + " = " + (getnum1 + getnum2));			
+		return getnum1 + getnum2;			
 	}
 	
 	/**
 	 * Method for subtracting the two integers
-	 * @param getnum1
-	 * @param getnum2
+	 * @param getNum1
+	 * @param getNum2
 	 */
-	private static void subtract (int getnum1, int getnum2){
+	private static double subtract (double getNum1, double getNum2){
 		
-		System.out.println(getnum1 + " - " + getnum2 + " = " + (getnum1 - getnum2));
+		return getNum1 - getNum2;
 		
 	}
 	
@@ -72,9 +79,9 @@ public class FUnWithMath {
 	 * @param getnum1
 	 * @param getnum2
 	 */
-	private static void multiply (int getnum1, int getnum2){
+	private static double multiply (double getNum1, double getNum2){
 		
-		System.out.println(getnum1 + " * " + getnum2 + " = " + (getnum1 * getnum2));
+		return getNum1 * getNum2;
 		
 	}
 	
@@ -83,10 +90,10 @@ public class FUnWithMath {
 	 * @param getnum1
 	 * @param getnum2
 	 */
-	private static void divide (int getnum1, int getnum2){
+	private static double divide (double getNum1, double getNum2){
 		
 		
-		System.out.println(getnum1 + " / " + getnum2 + " = " + (df.format((double)getnum1 / getnum2)));
+		return getNum1 / getNum2;
 		
 		
 	}
